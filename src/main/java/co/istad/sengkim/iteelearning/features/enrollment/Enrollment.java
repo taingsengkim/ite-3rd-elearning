@@ -1,11 +1,10 @@
 package co.istad.sengkim.iteelearning.features.enrollment;
 
 import co.istad.sengkim.iteelearning.features.course.Course;
-import co.istad.sengkim.iteelearning.features.student.Student;
+import co.istad.sengkim.iteelearning.features.student.StudentProfile;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.catalina.valves.StuckThreadDetectionValve;
 
 import java.time.LocalDateTime;
 
@@ -27,6 +26,6 @@ public class Enrollment {
 
     @ManyToOne
     @JoinColumn(name = "student_id")
-    private Student student;
+    private StudentProfile studentProfile;
 
 }

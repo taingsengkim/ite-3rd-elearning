@@ -7,7 +7,6 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.catalina.LifecycleState;
 
 import java.util.List;
 
@@ -15,7 +14,7 @@ import java.util.List;
 @Getter
 @Entity
 @Table(name = "student_profiles")
-public class Student {
+public class StudentProfile {
     @Id
     private String userId;
     private String biography;
