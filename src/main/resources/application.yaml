@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ite-elearning
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    password: ${PASSWORD}
+    url: ${URL}
+    driver-class-name: org.postgresql.Driver
+    username: ${USERNAME}
+server:
+  port: 8099
